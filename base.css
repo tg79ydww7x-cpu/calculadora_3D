@@ -1,0 +1,80 @@
+body {
+    background-color: #c0c0c0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculadora {
+    background-color: #e0e0e0;
+    width: 340px;
+    padding: 25px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.8), inset 0 -6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pantalla {
+    background-color: #ececec;
+    border-radius: 15px;
+    padding: 15px 20px;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.fila button {
+    flex: 1;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.8), inset 0 -3px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.fila button:active {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.7);
+    transform: scale(0.98);
+}
+
+.btn-borrar {
+    background-color: #f65a77 !important;
+    color: white !important;
+    box-shadow: 4px 4px 8px rgba(215, 70, 98, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Bloque Azul Alargado para el botón = */
+.btn-igual {
+    background-color: #74b9ff !important;
+    /* El color azul claro */
+    color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(116, 185, 255, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.6) !important;
+}
+
+.btn-cero {
+    flex: 2 !important;
+}
